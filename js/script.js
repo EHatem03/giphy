@@ -9,10 +9,15 @@ $("#search-button").click(function () {
         .then(function (response) {
             return response.json();
         })
-        .then(function (data) {
+        .then(function (response) {
 
-            console.log(data);
-
+            console.log(response.data[0].images.original.url);
+        
+        
+            
+            // using jquery, load this onto our page as an img
+            // <img> tag with src
+    
         })
 
 });
